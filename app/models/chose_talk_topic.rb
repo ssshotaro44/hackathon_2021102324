@@ -1,0 +1,2 @@
+class ChoseTalkTopic < ApplicationRecord
+end

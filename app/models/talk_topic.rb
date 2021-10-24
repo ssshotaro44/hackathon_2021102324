@@ -1,0 +1,2 @@
+class TalkTopic < ApplicationRecord
+end
