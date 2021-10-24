@@ -1,4 +1,14 @@
 <body>
-    <h1>hello, this is icebreak roulette, choose</h1>
+    <h1>興味のあるお題を複数選んでください</h1>
+    <%= form_tag("/topic/generate", {multipart: true}) do %>
+
+        <% @topics.each do |topic| %>
+        <input type="checkbox" id="<%= topic.id %>" name="<%= topic.id %>">
+        <label for="<%= topic.id %>"><%= topic.content %></label>
+        <% end %>
+
+        <input type="submit">
+    <% end %>
+
 </body>
 </html>

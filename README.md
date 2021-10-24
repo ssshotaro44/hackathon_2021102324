@@ -9,3 +9,4 @@ rails: 6.1.4.1
 ## how to setup in heroku
 rails server  
 rails db:migrate  
+bundle exec rake db:seed
